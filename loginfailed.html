@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>White Water International - Home</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.button').mouseenter(function() {
+            $(this).animate({
+                backgroundColor: "#00001f"
+            }, 200);
+        });
+        $('.button').mouseleave(function() {
+            $(this).animate({
+                backgroundColor: "#00006c"
+            }, 200);
+        });
+        $("#loginFail").fadeTo(1000, 1);
+    });
+    </script>
+</head>
+
+<body id="loginFailedPage">
+    <!--Top Nav Bar-->
+    <nav id="nav">
+        <ul id="logo">
+            <li><a href="index.html" id="logoText">White Water International</a></li>
+        </ul>
+    </nav>
+    
+    <!--Login Fail Message-->
+    <div id="loginFail">
+        <p>Connection could not be established. Make sure your username and password are correct.</p>
+    </div>
+    
+    <!--Login-->
+    <br>
+    <div id="login" style="display: block; opacity: 0.9">
+        <h1 style="padding-top: 40px; padding-bottom: 20px">Login</h1>
+        <form action="login.php" method="post">
+            <ul id="loginList">
+                <li class="inputBlock">
+                    <span class="inputLabel" style="text-align: center">Username: </span>
+                    <input type="text" name="username" class="input" autofocus>
+                </li>
+                <li class="inputBlock">
+                    <span class="inputLabel" style="text-align: center">Password: </span>
+                    <input type="password" name="password" class="input">
+                </li>
+                <li class="inputBlock"><input type="submit" value="Login" class="button"></li>
+                <!--<li class="inputBlock"><span><a href="#" id="forgotLink">Forgot your password?</a></span></li>-->
+            </ul>
+        </form>
+    </div>
+    
+    <!--Copyright-->
+    <div id="copy">
+        <p style="margin: 0">White Water International &copy; 2017 | All Rights Reserved | Designed by Zeyad Hamza</p>
+    </div>
+</body>
+
+</html>

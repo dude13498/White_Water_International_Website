@@ -1,0 +1,355 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    max-height: 3638;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+#loginPage,
+#dashboardPage,
+#loginFailedPage,
+#resultsPage {
+    background-color: #d7d7d8;
+    background-image: url("background-image.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: block;
+    position: fixed;
+}
+
+#resultsPage nav {
+    border-bottom: 1px solid #000039;
+}
+
+#menuItems {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.navButton {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+.navButton a {
+    line-height: 50px;
+    color: #000039;
+    text-decoration: none;
+    width: 90px;
+    float: right;
+}
+
+a:visited {
+    border: none;
+    text-decoration: none;
+}
+
+#logo {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 1.3em;
+    padding: 0;
+}
+
+#login {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 400px;
+    height: 400px;
+    margin: 125px auto auto auto;
+    box-shadow: 10px 10px 15px;
+    border-radius: 25px;
+    min-width: 400px;
+    display: none;
+}
+
+#logoText {
+    width: auto;
+    text-decoration: none;
+    line-height: 50px;
+    color: #000039;
+}
+
+h1 {
+    text-align: center;
+    line-height: 50px;
+    color: #000039;
+    padding-top: 90px;
+    margin: 0;
+    font-size: 3.5em;
+}
+
+.input {
+    margin: auto;
+    height: 25px;
+    width: 225px;
+    background-color: #fff;
+}
+
+.input:focus {
+    background-color: #fff;
+    outline-color: #000039;
+}
+
+.inputLabel {
+    width: 120px;
+    display: inline-block;
+    text-align: right;
+    padding: 5px;
+}
+
+form {
+    margin: auto;
+    width: auto;
+}
+
+.inputBlock {
+    list-style-type: none;
+    width: auto;
+    height: auto;
+    padding: 10px 50px;
+    margin: 0;
+    text-align: center;
+}
+
+.inputBlockFrm {
+    list-style-type: none;
+    width: 780px;
+    height: auto;
+    padding: 15px 10px 15px 10px;
+    margin: 0;
+    text-align: left;
+}
+
+.updateBlockFrm {
+    list-style-type: none;
+    width: 100%;
+    height: auto;
+    padding: 15px 0 5px 0;
+    margin: 0; 
+    text-align: left;
+}
+
+.button {
+    width: 75px;
+    height: 40px;
+    display: block;
+    background-color: #00006c;
+    margin: auto;
+    opacity: 1;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4em;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0;
+    border: none;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", Arial, sans-serif;
+    cursor: pointer;
+}
+
+#loginList {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+#dashboard {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 800px;
+    height: 450px;
+    margin: 125px auto auto auto;
+    box-shadow: 10px 10px 15px;
+    border-radius: 25px;
+    display: none;
+}
+
+#addDBheader {
+    display: block;
+}
+
+#addForm {
+    float: left;
+    width: 800px;
+}
+
+#submitButton {
+    margin-left: 2%;
+    width: 18%;
+}
+
+#upFrmLst {
+    margin: 0;
+    padding: 0;
+}
+
+#contactMenu {
+    width: 250px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.6);
+    float: right;
+    position: relative;
+    top: 50px;
+    border-bottom-left-radius: 10px;
+    display: none;
+}
+
+#contactMenu p {
+    padding-left: 5px;
+    color: #000039;
+}
+
+#loginFail {
+    background-color: #e5e5e5;
+    border: 1px solid #000039;
+    border-radius: 10px;
+    width: 250px;
+    height: 75px;
+    position: absolute;
+    top: 55px;
+    left: 5px;
+    float: left;
+    display: none;
+    box-shadow: 5px 5px 15px;
+}
+
+#loginFail p {
+    color: #000039;
+    margin: 0;
+    font-size: 0.9em;
+    text-align: center;
+    height: 50px;
+    line-height: 25px;
+}
+
+#copy {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    color: #000039;
+    font-size: 0.7em;
+    text-align: center;
+    line-height: 50px;
+}
+
+#resultsPage #copy {
+    border-top: 1px solid #000039
+}
+
+.menuItem {
+    height: 150px;
+    line-height: 150px;
+    display: block;
+    margin: 0;
+}
+
+.tabs {
+    display: inline-block;
+    width: 48.6%;
+    line-height: 50px;
+    height: inherit;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 5px 5px 0 5px;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+
+#updateForm {
+    display: none;
+    border-left: 1px solid #000039;
+    border-right: 1px solid #000039;
+    left: 25%;
+    width: 30%;
+}
+
+h3 {
+    text-align: center;
+    color: #000039;
+    font-size: 2em;
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
+
+#searchBar {
+    width: 80%;
+    height: 100%;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#searchBar:focus {
+    background-color: #fff;
+    outline-color: #000039;
+}
+
+.resultButton {
+    display: block;
+    background-color: #b2b2ff;
+    color: #fff;
+    margin: 0 auto 0 auto;
+    border-radius: 5px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    width: 50%;
+}
+
+#searchResults {
+    display: inline-block;
+    border-right: 1px solid #000039;
+    overflow-y: auto;
+    width: 25%;
+}
+
+.resultPane {
+    height: 85%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 51px;
+}
+
+#result {
+    width: 91%;
+    margin: 0 0 10px 10px;
+    padding-left: 5px;
+    height: 120px;
+    font-size: 1.4em;
+    line-height: 50px;
+    opacity: 1;
+    background-color: #fff;
+    float: left;
+    box-shadow: 5px 5px 5px #808080;
+    border-radius: 5px;
+    text-align: center;
+    border: 3px solid #000039;
+}
