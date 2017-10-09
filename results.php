@@ -54,10 +54,10 @@
         </form>
         
         <?php
-            //include 'login.php';
+            session_start();
         
-            $serverName = "HAMZA-FAMILY\SQLEXPRESS"; //serverName\instanceName
-            $connectionInfo = array( "Database"=>"Clients", "UID"=>"Zeyad", "PWD"=>"Hamza");
+            $serverName = "HAMZA-FAMILY\SQLEXPRESS";
+            $connectionInfo = array( "Database"=>"Clients", "UID"=>$_SESSION["username"], "PWD"=>$_SESSION["password"]);
             $conn = sqlsrv_connect( $serverName, $connectionInfo);
 
             $searchterm = $_POST["search"];
@@ -74,8 +74,7 @@
                 echo "<div id='result'>
                     <span style='display: block'>".$row['first_name']. " " .$row['last_name']."</span>
                     <span class='resultButton'>Details</span>
-                    </div>
-                    ";
+                    </div>";
             }
         ?>
         

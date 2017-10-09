@@ -1,8 +1,8 @@
 <?php
-    //include 'login.php';
+    session_start();
 
-    $serverName = "HAMZA-FAMILY\SQLEXPRESS"; //serverName\instanceName
-    $connectionInfo = array( "Database"=>"Clients", "UID"=>"Zeyad", "PWD"=>"Hamza");
+    $serverName = "HAMZA-FAMILY\SQLEXPRESS";
+    $connectionInfo = array( "Database"=>"Clients", "UID"=>$_SESSION["username"], "PWD"=>$_SESSION["password"]);
     $conn = sqlsrv_connect( $serverName, $connectionInfo);
     
     $fname = $_POST["fname"];
