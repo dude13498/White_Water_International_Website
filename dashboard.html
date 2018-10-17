@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 
 <html>
@@ -142,4 +143,150 @@
     </div>
 </body>
 
+=======
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>White Water International - Dashboard</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#dashboard").fadeTo(1000, 0.9);
+        $('.button').mouseenter(function() {
+            $(this).animate({
+                backgroundColor: "#00001f"
+            }, 200);
+        });
+        $('.button').mouseleave(function() {
+            $(this).animate({
+                backgroundColor: "#00006c"
+            }, 200);
+        });
+        $('#add').click(function() {
+            $('.active').attr('class', 'inactive');
+            $('#addForm').attr('class', 'active');
+        });
+        $('#view').click(function() {
+            $('.active').attr('class', 'inactive');
+            $('#viewForm').attr('class', 'active');
+        });
+        $('.resultButton').mouseenter(function() {
+            $(this).animate({
+                backgroundColor: "#00001f"
+            }, 200);
+        });
+        $('.resultButton').mouseleave(function() {
+            $(this).animate({
+                backgroundColor: "#00006c"
+            }, 200);
+        });
+    });
+    </script>
+</head>
+
+<body id="dashboardPage">
+    <!--Top Nav Bar-->
+    <nav id="nav">
+        <ul id="logo">
+            <li><a href="index.html" id="logoText">White Water International</a></li>
+        </ul>
+    </nav>
+    
+    <!--Login-->
+    <br>
+    <div id="dashboard">
+        <!--Tabs-->
+        <li class="inputBlockFrm">
+            <ul style="padding: 0; margin: 0">
+                <li class="tabs" id="add">Add to Database</li
+                ><li class="tabs" id="view">View And Update</li>
+            </ul>
+        </li>
+        
+        <!--Welcome-->
+        <div id="welcome" class="active">
+            <h1>Welcome</h1>
+            <h3>to your White Water dashboard</h3>
+        </div>
+        
+        <!--Add to DB Form-->
+        <form id="addForm" action="add.php" method="post" class="inactive">
+            <ul id="upFrmLst">
+                <!--First and Last Name-->
+                <li class="inputBlockFrm" style="padding-top: 10px">
+                    <span class="inputLabel">First Name:</span>
+                    <input type="text" name="fname" class="input" tabindex="1">
+                    <span class="inputLabel">Last Name:</span>
+                    <input type="text" name="lname" class="input" tabindex="2">
+                </li>
+                
+                <!--Email-->
+                <li class="inputBlockFrm">
+                    <span class="inputLabel" style="text-align: right">Email Address:</span>
+                    <input type="email" name="email" class="input" tabindex="3">
+                    <span class="inputLabel" style="width: 13px; height: 13px; padding-left: 45px">
+                        <input type="hidden" name="preferred" value="0">
+                        <input type="checkbox" name="preferred" value="1" style="margin: 0" tabindex="4">
+                    </span>
+                    <span class="inputLabel" style="width: auto">This is my preferred email address</span>
+                </li>
+                
+                <!--Phone-->
+                <li class="inputBlockFrm">
+                    <span class="inputLabel">Phone Number:</span>
+                    <input type="tel" name="phone" class="input" tabindex="5">
+                    <span class="inputLabel" style="width: 83px; padding-left: 26px; text-align: center">
+                        <input type="radio" name="numberType" value="Cell" tabindex="6"> Cell
+                    </span>
+                    <span class="inputLabel" style="width: 83px; padding-left: 0; text-align: center">
+                        <input type="radio" name="numberType" value="Home" tabindex="7"> Home
+                    </span>
+                </li>
+                
+                <!--Address-->
+                <li class="inputBlockFrm">
+                    <span class="inputLabel">Street:</span>
+                    <input type="text" name="street" class="input" tabindex="8">
+                    <span class="inputLabel">State:</span>
+                    <input type="text" name="state" class="input" style="width: 50px" tabindex="10">
+                    <span class="inputLabel" style="width: 50px">ZIP:</span>
+                    <input type="text" name="zipcode" class="input" style="width: 70px" tabindex="11"> 
+                    
+                </li>
+                <li class="inputBlockFrm">
+                    <span class="inputLabel">City:</span>
+                    <input type="text" name="city" class="input" tabindex="9">
+                    <span class="inputLabel">Country:</span>
+                    <input type="text" name="country" class="input" tabindex="12">
+                </li>
+                
+                <!--Submit Button-->
+                <li class="inputBlockFrm" style="height: 40px">
+                    <input type="submit" value="Submit" class="button" id="submitButton" style="width: 85px; margin-left: auto; margin-right: auto" tabindex="13">
+                </li>
+            </ul>
+        </form>
+        
+        <!--View/Update Form-->
+        <form id="viewForm" class="inactive" action="results.php" method="post">
+            <!--Search Bar-->
+            <div class="inputBlockFrm" style="padding-top: 10px; height: 40px">
+                <input type="search" id="searchBar" placeholder="Search for a client in the database" name="search">
+                <input type="submit" value="Search" class="button" id="submitButton" style="display: inline-block" tabindex="13">
+            </div>
+        </form>
+    </div>
+    
+    <!--Copyright-->
+    <div id="copy">
+        <p style="margin: 0">White Water International &copy; 2017 | All Rights Reserved | Designed by Zeyad Hamza</p>
+    </div>
+</body>
+
+>>>>>>> 33c8f815f108155d7888030f93c0a9208ab13de6
 </html>
